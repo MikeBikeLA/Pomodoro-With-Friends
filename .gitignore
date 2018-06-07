@@ -1,0 +1,6 @@
+#ignore all audio files
+**/*_work.*
+**/*_break.*
+
+#except joe
+#!**/joe*

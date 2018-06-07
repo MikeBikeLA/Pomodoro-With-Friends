@@ -2,9 +2,9 @@ import audio, alarm, time
 from threading import Event
 
 audio.convert()
-time_work = 25
-time_break = 5
-time_break_long = 15
+time_work = 0.1
+time_break = 0.1
+time_break_long = 0.1
 count = 0
 while True: 
     alarm.sound('work')
