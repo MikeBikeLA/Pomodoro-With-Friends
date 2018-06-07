@@ -3,11 +3,11 @@ from pydub import AudioSegment
 
 def convert():
     base_dir = os.getcwd()
-    source_dir_break = base_dir + '/recordings/original/break'  # Path where the audio files are located
-    source_dir_work = base_dir + '/recordings/original/work' # Path where the audio files are located
-    output_dir_break = base_dir + '/recordings/waves/break/'
-    output_dir_work = base_dir + '/recordings/waves/work/'
-    extension_list = ('*.mp3', '*.aac') #must have at least two #m4a not working
+    source_dir_break = base_dir + '/recordings/audio/break'  # Path where the audio files are located
+    source_dir_work = base_dir + '/recordings/audio/work' # Path where the audio files are located
+    output_dir_break = base_dir + '/recordings/converted/break/'
+    output_dir_work = base_dir + '/recordings/converted/work/'
+    extension_list = ['*.mp3', '*.aac'] #must have at least two #m4a not working
 
     if os.path.exists(output_dir_break):
         shutil.rmtree(output_dir_break)

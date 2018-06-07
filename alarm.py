@@ -1,11 +1,11 @@
 import random, os, wave, pygame, time
 
 def sound(alarm_type):
-    audio_file = random.choice(os.listdir("recordings/waves/%s" % (alarm_type))) #chooses random audio file from directory
+    audio_file = random.choice(os.listdir("recordings/converted/%s" % (alarm_type))) #chooses random audio file from directory
 
     #matches bitrate to audio file - fixes pitch
     pygame.mixer.quit
-    file_path = 'recordings/waves/%s/%s' % (alarm_type, audio_file)
+    file_path = 'recordings/converted/%s/%s' % (alarm_type, audio_file)
     print(file_path)
     file_wav = wave.open(file_path)
     frequency = file_wav.getframerate()
