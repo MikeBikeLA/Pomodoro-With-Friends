@@ -22,3 +22,4 @@ def sound(alarm_type):
     time.sleep(4)
     my_sound.stop() 
     pygame.display.quit()
+    
